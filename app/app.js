@@ -1,10 +1,11 @@
 "use strict";
 //모듈
-const express = require('express')
+const express = require('express');
 const app = express();
-const home = require("./src/routes/home")
+const home = require("./src/routes/home");
 
-
+//정적 경로 지정
+app.use(express.static(`${__dirname}/src/public`));
 //라우팅
 app.use("/", home);
 
