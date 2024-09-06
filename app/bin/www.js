@@ -1,3 +1,5 @@
+//서버를 가동하는 파일
+
 "use strict"
 const app = require("../app");
 const port = 3000;
