@@ -25,6 +25,15 @@ function login(){
     })
     //요청을 받으면 응답받은 데이터를 출력
     .then((res)=>{return res.json()})
-    .then((res)=>{ console.log(res)});
-    
+    .then((res)=>{
+        if (res.success){//true일 경우
+            location.href = "/"; //위치를 메인페이지로 이동
+        }
+        else{
+            alert(res.msg);
+        }
+    })
+    .catch((err)=>{
+        console.error(new Error("로그인 중 에러 발생"));
+    });
 }
