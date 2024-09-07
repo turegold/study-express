@@ -30,7 +30,7 @@ class UserStorage{
             newUser[info] = users[info][idx];
             return newUser;
         },{});
-
+        //console.log(userInfo);
         return userInfo;
     }
 }
