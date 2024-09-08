@@ -13,7 +13,7 @@ function login(){
         id: id.value,
         psword: psword.value,
     };
-    
+   
     //프론트에 Post요청
     //(클릭했을 때 id,psword를 body에 담아서 보냄)
     fetch("/login", {
